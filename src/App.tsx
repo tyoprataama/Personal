@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Contact from "./components/Contact/Contact";
+import Hero from "./components/Hero/Hero";
+import Who from "./components/Who/Who";
+import Work from "./components/Work/Work";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello TS</h1>
-    </div>
+    <>
+      <Hero />
+      <Who />
+      <Work />
+      <Contact />
+    </>
   );
 }
 
