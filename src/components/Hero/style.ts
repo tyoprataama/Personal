@@ -1,16 +1,26 @@
 const styles: any = {
   container: {
-    color: '#000',
-    backgroundColor: '#FEFCF3',
+    color: '#fff',
+    backgroundColor: '#00235B',
     height: '100vh',
-    justifyContent: 'center',
+    
   },
   nav: {
-    textAlign: 'center'
+    textAlign: 'center',
+    margin: '0',
+    padding: '20px'
   },
   fontHeader: {
     padding: '20px',
     margin: '0',
+  },
+  main: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  me: {
+    width: '500px',
+    height: '500px',
   }
 }
 
