@@ -3,6 +3,7 @@ const styles: any = {
     color: '#fff',
     backgroundColor: '#00235B',
     height: '100vh',
+    zIndex: '1',
     
   },
   nav: {
@@ -21,6 +22,16 @@ const styles: any = {
   me: {
     width: '500px',
     height: '500px',
+    position: 'absolute',
+    zIndex: '999'
+  },
+  right: {
+    position: 'relative'
+  },
+  sphere: {
+    width: '600px',
+    height: '600px',
+    zIndex: '2'
   }
 }
 
