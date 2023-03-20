@@ -23,5 +23,5 @@
   "include": [
     "src/**/*.js", "tests/**/*.ts"
   ],
-  "exclude": ["node_modules", ".vscode"],
+  "exclude": ["node_modules", ".vscode"]
 }

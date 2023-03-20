@@ -1,7 +1,6 @@
 const styles: any = {
   me: {
-    width: '500px',
-    height: '500px',
+    width: '300px',
     position: 'absolute',
   },
 

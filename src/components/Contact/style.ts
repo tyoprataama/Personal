@@ -1,12 +1,9 @@
-const styles = {
-  container: {
-    color: '#fff',
-    backgroundColor: '#3795BD',
-    height: '100vh'
+const styles:any = {
+  img: {
+    padding: '170px 0 0 0'
   },
-  fontHeader: {
-    padding: '20px',
-    margin: '0'
+  title: {
+    padding: '80px 0 0 0'
   }
 }
 

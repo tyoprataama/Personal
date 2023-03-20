@@ -7,9 +7,9 @@ import Navbar from "../Navbar/Navbar";
 
 const Img = styled.div`
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
-  left: 100px;
+  left: 300px;
   right: 0px;
   margin: auto;
   animation: animate 2s infinite ease alternate;
@@ -19,7 +19,7 @@ const Img = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    left: 0;
+    left: 50px;
   }
 `;
 const Desc = styled.p`
@@ -46,9 +46,8 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100%;
-  padding: 20px;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: #40513b;
@@ -66,9 +65,14 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 0 0 20px;
+  margin-top: -100px;
   gap: 20px;
   @media only screen and (max-width: 768px) {
+    justify-content: center;
+    padding: 0;
     align-items: center;
+    text-align: center;
   }
 `;
 
@@ -98,6 +102,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
+    margin-top: -200px;
   }
 `;
 const Hero = () => {
@@ -112,16 +117,16 @@ const Hero = () => {
           <Desc>
             Especially in front-end engineering with 3+ years experience
           </Desc>
-          <Button>More about me</Button>
+          <Button>My resume</Button>
         </Left>
         <Right>
           <Canvas style={styles.sphere}>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 100, 200]} scale={2.5}>
+            <Sphere args={[1, 100, 200]} scale={2.3}>
               <MeshDistortMaterial
-                color="#3d1c56"
+                color="#000"
                 attach="material"
                 distort={0.5}
                 speed={2}
