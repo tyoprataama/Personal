@@ -7,23 +7,31 @@ const Container = styled.div`
   scroll-snap-align: center;
   width: 100%;
   display: flex;
-  color: #edf1d6;
-  background-color: #40513b;
+  color: #000;
+  background-color: #fffbf5;
   @media only screen and (max-width: 768px) {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
 `;
 const Item = styled.div`
-  padding: 50px;
+  padding: 10px;
   font-weight: 500;
-  font-size: 30px;
+  align-items: center;
+  justify-content: center;
 `;
 const Desc = styled.div`
   padding: 50px;
   text-align: justify;
+`;
+const Title = styled.div`
+  font-size: 30px;
+  text-align: center;
 `;
 const Portfolio = styled.div`
   display: flex;
@@ -34,12 +42,20 @@ const Portfolio = styled.div`
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--borderColor);
+  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 const Button = styled.button`
   background-color: #37306b;
   color: white;
+  width: 100%;
   font-weight: 500;
-  width: 200px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -52,23 +68,23 @@ const Who = () => {
     {
       id: 1,
       title: "React JS",
-      desc: "Packo is a user-friendly web-based application designed to simplify the ordering process for various products. This app is built on React JS, a popular JavaScript library that enables smooth and efficient user interaction. The app offers a seamless and intuitive user interface, making it easy for customers to place orders with just a few clicks.Packo is an all-in-one ordering platform that caters to the needs of various industries, from food and beverage to retail and e-commerce. The app allows users to browse through a wide range of products, view product details, and select their preferred quantity. Additionally, users can customize their orders by adding specific instructions or notes for the seller.",
+      desc: "Packo is not mobile friendly web-based application designed to simplify the ordering process for various products. This app is built on React JS, a popular JavaScript library that enables smooth and efficient user interaction.",
       img: require("../Img/packo.png"),
       link: "https://packo-portfolio.web.app/",
     },
     {
       id: 2,
-      title: "React",
-      desc: "Packo is a user-friendly web-based application designed to simplify the ordering process for various products. This app is built on React JS, a popular JavaScript library that enables smooth and efficient user interaction. The app offers a seamless and intuitive user interface, making it easy for customers to place orders with just a few clicks.Packo is an all-in-one ordering platform that caters to the needs of various industries, from food and beverage to retail and e-commerce. The app allows users to browse through a wide range of products, view product details, and select their preferred quantity. Additionally, users can customize their orders by adding specific instructions or notes for the seller.",
-      img: require("../Img/packo.png"),
-      link: "https://packo-portfolio.web.app/",
+      title: "Bootstrap",
+      desc: "This is a user-friendly web-based application designed to grow the company brand. Using bootstrap as the technology inside of it, make the app is light and fast",
+      img: require("../Img/duaphanda.png"),
+      link: "https://duaphanda.web.app/",
     },
     {
       id: 3,
-      title: "Tailwind",
-      desc: "Packo is a user-friendly web-based application designed to simplify the ordering process for various products. This app is built on React JS, a popular JavaScript library that enables smooth and efficient user interaction. The app offers a seamless and intuitive user interface, making it easy for customers to place orders with just a few clicks.Packo is an all-in-one ordering platform that caters to the needs of various industries, from food and beverage to retail and e-commerce. The app allows users to browse through a wide range of products, view product details, and select their preferred quantity. Additionally, users can customize their orders by adding specific instructions or notes for the seller.",
-      img: require("../Img/packo.png"),
-      link: "https://packo-portfolio.web.app/",
+      title: "Game JS",
+      desc: "This game is not mobile friendly web-based game designed to make people think and have fun at the same time. Using DOM (Document Object Models) and simple JavaScript algorithm making this game is light and fast.",
+      img: require("../Img/math.png"),
+      link: "https://guessmynum-project.web.app/",
     },
   ];
   return (
@@ -79,10 +95,14 @@ const Who = () => {
           return (
             <Portfolio>
               <Wrap>
-                <Item key={id}>{title}</Item>
-                <img style={styles.image} src={img} alt="portfollio" />
-                <Desc>{desc}</Desc>
-                <Button><a href={link}>More details</a></Button>
+                <Item key={id}>
+                  <Title>{title}</Title>
+                  <img style={styles.image} src={img} alt="portfollio" />
+                  <Desc>{desc}</Desc>
+                  <Button>
+                    <a href={link}>More details</a>
+                  </Button>
+                </Item>
               </Wrap>
             </Portfolio>
           );

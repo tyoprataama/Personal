@@ -52,6 +52,7 @@ const Container = styled.div`
   justify-content: space-between;
   color: #40513b;
   background-color: #edf1d6;
+  padding: 20px;
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
@@ -115,9 +116,10 @@ const Hero = () => {
             Hi, I AM TYO <br /> I AM DEVELOPER
           </Title>
           <Desc>
-            Especially in front-end engineering with 3+ years experience
+            especially in Front-End engineering. I've been coding for 3+ years
+            and I love it. Just like you!
           </Desc>
-          <Button>My resume</Button>
+          <Button><a href="https://drive.google.com/file/d/1Plxj52li5jAkBxW6ETpRHyR5TUXwBQIB/view?usp=sharing">Download My Resume</a></Button>
         </Left>
         <Right>
           <Canvas style={styles.sphere}>
