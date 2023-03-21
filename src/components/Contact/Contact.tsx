@@ -9,7 +9,7 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  background-color: #dfffd8;
+  background-color: #3c6255;
   height: 100%;
   display: flex;
   justify-content: space-between;

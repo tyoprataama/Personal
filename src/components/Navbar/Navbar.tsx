@@ -9,7 +9,7 @@ const Nav = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <h3>Welcome to my page!</h3>
+      <h3>Hi there!😜welcome to my page👻</h3>
     </Nav>
   );
 };

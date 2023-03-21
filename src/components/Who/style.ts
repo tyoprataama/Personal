@@ -1,6 +1,6 @@
 const styles:any = {
   container: {
-    backgroundColor: '#fffbf5',
+    backgroundColor: '#D2DAFF',
     color: '#000',
     width: '100%',
     justifyContent: 'center',

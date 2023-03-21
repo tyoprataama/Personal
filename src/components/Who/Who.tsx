@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   color: #000;
-  background-color: #fffbf5;
+  background-color: #d2daff;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
@@ -24,6 +24,15 @@ const Item = styled.div`
   font-weight: 500;
   align-items: center;
   justify-content: center;
+  height: 600px;
+  width: 340px;
+  margin-bottom: 40px;
+  border: 1px solid var(--borderColor);
+  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  @media only screen and (max-width: 768px) {
+  }
 `;
 const Desc = styled.div`
   padding: 50px;
@@ -34,7 +43,8 @@ const Title = styled.div`
   text-align: center;
 `;
 const Portfolio = styled.div`
-  display: flex;
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   justify content: center;
   align-items: center;
@@ -42,13 +52,11 @@ const Portfolio = styled.div`
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 20px;
-  border: 1px solid var(--borderColor);
-  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
   @media only screen and (max-width: 768px) {
     margin-bottom: 20px;
+    padding: 10px;
   }
 `;
 const Button = styled.button`
@@ -60,7 +68,7 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 20px;
+  bottom: 20px;
 `;
 
 const Who = () => {
@@ -75,7 +83,7 @@ const Who = () => {
     {
       id: 2,
       title: "Bootstrap",
-      desc: "This is a user-friendly web-based application designed to grow the company brand. Using bootstrap as the technology inside of it, make the app is light and fast",
+      desc: "This is a user-friendly web-based application designed to grow the company brand. Using bootstrap as the technology inside of it, make the app is light and fast for the user and make anyone happy.",
       img: require("../Img/duaphanda.png"),
       link: "https://duaphanda.web.app/",
     },
