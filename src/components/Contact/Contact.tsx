@@ -9,7 +9,7 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  background-color: #3c6255;
+  background-color: #c9d6df;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ const Contact = () => {
         </Left>
         <Right>
           <Title style={styles.title}>My Location</Title>
-          <img style={styles.img} src={require("../Img/map.png")} />
+          <img style={styles.img} src={require("../Img/map.png")} alt='map' />
         </Right>
       </Container>
     </Section>

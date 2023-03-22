@@ -1,6 +1,6 @@
 const styles:any = {
-     container: {
-    backgroundColor: '#AAC4FF',
+    container: {
+    backgroundColor: '#C9D6DF',
     color: '#000',
     width: '100%',
     justifyContent: 'center',
@@ -23,6 +23,9 @@ const styles:any = {
   },
   touch: {
     padding: '10px 0'
+  },
+  under: {
+    textDecoration: 'underline'
   }
 }
 

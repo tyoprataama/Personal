@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   color: #000;
-  background-color: #aac4ff;
+  background-color: #c9d6df;
   padding: 40px;
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -36,26 +36,6 @@ const Left = styled.div`
     width: 100%;
   }
 `;
-
-const Title = styled.h1`
-  font-size: 34px;
-  padding: 0 0 0 20px;
-  @media only screen and (max-width: 768px) {
-    font-size: 50px;
-    padding: 20px;
-    text-align: center;
-  }
-`;
-const Button = styled.button`
-  background-color: #37306b;
-  color: white;
-  font-weight: 500;
-  width: 200px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
 const List = styled.div`
   display: flex;
   @media only screen and (max-width: 768px) {
@@ -69,6 +49,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
+    margin-bottom: 30px;
   }
 `;
 
@@ -91,16 +72,21 @@ const Work = () => {
           <h3 style={styles.touch}>Get in Touch</h3>
           <ul>
             <li>
-              <a href="https://www.instagram.com/ty000o/">Instagram</a>
+              Instagram :{" "}
+              <a style={styles.under} href="https://www.instagram.com/ty000o/">@ty000o</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/tyo-pratama/">LinkedIn</a>
+              LinkedIn :{" "}
+              <a style={styles.under} href="https://www.linkedin.com/in/tyo-pratama/">
+                @tyo-pratama
+              </a>
             </li>
             <li>
-              <a href="https://twitter.com/sahacing_004">Twitter</a>
+              Twitter :{" "}
+              <a style={styles.under} href="https://twitter.com/sahacing_004">@TyoPratama</a>
             </li>
             <li>
-              <a href="https://github.com/tyoprataama">Github</a>
+              Github : <a style={styles.under} href="https://github.com/tyoprataama">@tyoprataama</a>
             </li>
             <li>tyoprataama004@gmail.com</li>
           </ul>

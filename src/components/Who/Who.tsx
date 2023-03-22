@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   color: #000;
-  background-color: #d2daff;
+  background-color: #c9d6df;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
@@ -21,6 +21,8 @@ const Container = styled.div`
 `;
 const Item = styled.div`
   padding: 10px;
+  display: grid;
+  grid-template-column: 1fr 1fr;
   font-weight: 500;
   align-items: center;
   justify-content: center;

@@ -50,8 +50,8 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: #fff;
-  background-color: #37306b;
+  color: #000;
+  background-color: #c9d6df;
   padding: 20px;
   @media only screen and (max-width: 768px) {
     width: 100%;
