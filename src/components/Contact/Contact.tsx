@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import styles from "./style";
 import styled from "styled-components";
 
@@ -73,12 +74,36 @@ const Right = styled.div`
   }
 `;
 
+
+
 const Contact = () => {
+  const ref:any = useRef();
+  const [success, setSuccess]:any = useState(null);
+  const handleSubmit = (e:any) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_bbyfbtc",
+      "template_7lcyoot",
+      ref.current,
+      "991RSR6EdAYgYBcB5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess(false);
+          
+        }
+      )
+  };
   return (
     <Section>
       <Container>
         <Left>
-          <Form>
+          <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact me</Title>
             <Input placeholder="Name" name="name" />
             <Input placeholder="Email" name="email" />
@@ -88,11 +113,14 @@ const Contact = () => {
               rows={10}
             />
             <Button type="submit">Send</Button>
+            {success &&
+            "Your message has been sent. We'll get back to you soon :)"
+            }
           </Form>
         </Left>
         <Right>
           <Title style={styles.title}>My Location</Title>
-          <img style={styles.img} src={require("../Img/map.png")} alt='map' />
+          <img style={styles.img} src={require("../Img/map.png")} alt="map" />
         </Right>
       </Container>
     </Section>
